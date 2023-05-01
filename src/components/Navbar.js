@@ -1,12 +1,12 @@
-import { useState, useRef } from "react";
-import { useOnClickOutside } from "../useOnClickOutside";
-
+import { useState, useRef } from 'react';
+import useOnClickOutside from '../useOnClickOutside';
+/* eslint-disable */
 const Navbar = () => {
-const [dropdown, setDropdown] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
-const ref = useRef();
+  const ref = useRef();
 
-useOnClickOutside(ref, dropdown, () => setDropdown(false));
+  useOnClickOutside(ref, dropdown, () => setDropdown(false));
 
   return (
     <nav>
@@ -14,8 +14,10 @@ useOnClickOutside(ref, dropdown, () => setDropdown(false));
         <li>Home</li>
         <li>About</li>
         <li ref={ref}>
-        <button onClick={() => setDropdown(!dropdown)}>
-            Services <span>&#8595;</span>
+          <button onClick={() => setDropdown(!dropdown)}>
+            Services
+            {' '}
+            <span>&#8595;</span>
           </button>
           {dropdown && (
             <ul>

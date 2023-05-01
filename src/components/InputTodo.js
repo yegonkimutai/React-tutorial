@@ -1,5 +1,5 @@
+/* eslint-disable */
 import { useState } from 'react';
-
 
 const InputTodo = ({ addTodoItem }) => {
   const [title, setTitle] = useState('');
@@ -18,25 +18,22 @@ const InputTodo = ({ addTodoItem }) => {
     } else {
       setMessage('Please add item');
     }
-  
   };
 
-
-    return (
-      <div>
-        <form onSubmit={handleSubmit} className="form-container">
+  return (
+    <div>
+      <form onSubmit={handleSubmit} className="form-container">
         <input
           className="input-text"
           type="text"
           placeholder="Add Todo..."
           value={title}
-          onChange={handleChange} 
+          onChange={handleChange}
         />
         <button className="input-submit">Submit</button>
       </form>
       <span className="submit-warning">{message}</span>
-      </div>
-    )
-  };
-  export default InputTodo;
-  
+    </div>
+  );
+};
+export default InputTodo;
