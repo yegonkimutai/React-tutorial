@@ -58,7 +58,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-This project is useful and important as it gives developers an experience of how to use React to create single page applications.
+This project is useful and important as it gives developers an experience of how to use React to create a to-do list.
 
 To get a local copy up and running, follow these steps.
 
