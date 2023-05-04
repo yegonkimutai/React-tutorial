@@ -49,7 +49,6 @@
 - **[Use React to create a to do list]**
 - **[Use different functionality to add, edit, check and remove contents in the list]**
 - **[Use css to modify the appearance of the list]**
-- **[Create a Navbar that has a dropdown menu]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
